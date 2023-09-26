@@ -1,4 +1,3 @@
-
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
@@ -98,5 +97,3 @@ task2_3>>[task3_5, task3_6]
 [task3_1, task3_2, task3_3]>>task4_1
 [task3_4, task3_5, task3_6]>>task4_2
 [task4_1, task4_2]>>task5>>task6
-celery_executor_demo.py
-Displaying celery_executor_demo.py.
