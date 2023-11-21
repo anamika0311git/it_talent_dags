@@ -23,7 +23,7 @@ query1 = [
 
 def count1(**context):
     dwh_hook = SnowflakeHook(snowflake_conn_id="SHS_Snowflake_P")
-    result = dwh_hook.get_first("select count(*) from ANALYTICSLAYER.AN_ITTAF_P.SP_ROW_COUNT")
+    result = dwh_hook.get_first("CALL ANALYTICSLAYER.AN_ITTAF_P.SP_ROW_COUNT;")
     logging.info("Number of rows in `ANALYTICSLAYER.AN_ITTAF_P.SP_ROW_COUNT`  - %s", result[0])
 
 
