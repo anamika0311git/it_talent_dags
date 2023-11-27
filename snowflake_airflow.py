@@ -29,7 +29,7 @@ def count1(**context):
 
 with dag:
     query1_exec = SnowflakeOperator(
-        task_id="snowfalke_task1",
+        task_id="snowflake_task1",
         sql=query1,
         snowflake_conn_id="SHS_Snowflake_P",
     )
